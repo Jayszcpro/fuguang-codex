@@ -1,0 +1,42 @@
+name: 试用反馈 · Trial feedback
+description: 分享并行使用 Codex 时遇到的实际问题，或记录一次浮光试用。
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Issue 是公开的。请用「项目 A」「聊天 B」代替真实名称，去掉原始日志、聊天正文、文件路径、联系人和凭据。
+  - type: dropdown
+    id: stage
+    attributes:
+      label: 你体验到了哪一步？
+      options:
+        - 只看了演示
+        - 本机已运行浮光
+        - 尝试构建或打开时遇到问题
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: 设备、系统和版本
+      description: 试用或构建遇到问题时，请填写 Mac 芯片、macOS、Codex 入口及版本。浮光版本在「···」菜单首行。
+      placeholder: M2，macOS 26.5，Codex 桌面版，浮光 beta.31
+  - type: textarea
+    id: scenario
+    attributes:
+      label: 最近一次真实场景
+      description: 当时并行跑了几个聊天？你怎么发现任务完成、怎么回到它？如果当时没有漏看，也可以说明原来的办法。
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 浮光的实际表现
+      description: 如果已使用，请写下你的操作和看到的结果。完成有没有及时出现？点标题到了正确聊天吗？如果已用数天，也欢迎写实际用了几天。
+  - type: checkboxes
+    id: reviewed
+    attributes:
+      label: 提交前核对
+      options:
+        - label: 我检查过这份公开反馈，已去掉私有项目和账号信息。
+          required: true
