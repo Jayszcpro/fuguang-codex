@@ -1,3 +1,5 @@
+<img src="fuguang-logo.png" alt="浮光 Logo" width="104" height="104">
+
 # 浮光 · Fuguang
 
 在 Mac 上跟进并行的 Codex 桌面聊天。保留完成提醒，点击聊天标题直接回到结果。
